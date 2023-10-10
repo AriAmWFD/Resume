@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  direction: rtl;
+  font-family: iransans;
+}
+
+@font-face {
+  font-family: iransans;
+  src: url(../fonts/IRANSansX-Regular.woff);
+}
+
+
+
+div.container-fluid {
+  width: 100%;
+  height: 914.69px;
+  background-image: url(../media/avi-richards-Z3ownETsdNQ-unsplash.jpg);
+  background-size: cover;
+
+  > div.topbar {
+    width: 100%;
+    height: 80.28px;
+    padding: 20px 0px;
+    display: flex;
+    justify-content: space-around;
+
+    > div.menu {
+      width: 480px;
+      height: 100%;
+      font-size: 15px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 30px;
+      
+
+      > a {
+        text-decoration: none;
+        color: white;
+        transition: all 300ms linear;
+      }
+      > a:hover {
+        color: #6d00f8;
+      }
+    }
+
+    > div.socials {
+      width: 183px;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+
+      > a {
+        width: 32px;
+        height: 32px;
+
+        > img {
+          width: 32px;
+          height: 32px;
+          border: white 1px solid;
+          padding: 5px;
+          border-radius: 5px;
+        }
+        > img:hover {
+          background-color: #6d00f8;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width:1000px) { div.menu{background-color: #6d00f8;}
+  
+}
